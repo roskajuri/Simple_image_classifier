@@ -1,0 +1,71 @@
+<html>
+
+<head>
+  <!-- Load the latest version of TensorFlow.js -->
+  <script src="https://unpkg.com/@tensorflow/tfjs"></script>
+  <script src="https://unpkg.com/@tensorflow-models/mobilenet"></script>
+  <script src="https://unpkg.com/@tensorflow-models/knn-classifier"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+
+
+
+  <div class="jumbotron text-center">
+    <h1>Very simple image classifier</h1>
+    <p>Upload any image to test !<br><br>
+
+
+
+
+
+    </p>
+  </div>
+
+  <div class="container"><center>
+    <div class="card" style="width:400px">
+      <div class="card-body">
+        <h4 class="card-title" id="prediction">Predicting...</h4>
+
+      </div>
+      <img class="card-img-bottom" id="img" src="img_avatar6.png" alt="Card image" style="width:100%">
+      <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
+          </div>
+          <div class="custom-file">
+            <input type="file" onchange="previewFile()" class="custom-file-input" 
+              aria-describedby="inputGroupFileAddon01">
+            <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+          </div>
+        </div>
+    </div>
+  </div>
+  </div>
+
+
+  <div id="prediction"></div>
+
+
+
+  <script src="index.js"></script>
+
+
+
+
+</body>
+
+</html>
